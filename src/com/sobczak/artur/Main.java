@@ -1,5 +1,6 @@
 package com.sobczak.artur;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -11,7 +12,8 @@ public class Main {
         int arraySize = scanner.nextInt();
 
         FillArray fillArray = new FillArray();
-        fillArray.fillArrayMethod(arraySize);
+        int[] sortedArray = fillArray.fillArrayMethod(arraySize);
+        System.out.println(Arrays.toString(sortedArray));
 
 
 //        BubbleSort bubbleSort = new BubbleSort();

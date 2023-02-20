@@ -1,5 +1,6 @@
 package com.sobczak.artur;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class FillArray {
@@ -16,6 +17,6 @@ public class FillArray {
             unsortArray[i] = numberToArray;
         }
         return unsortArray;
-
     }
+
 }
