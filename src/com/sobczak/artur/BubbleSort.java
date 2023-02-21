@@ -1,14 +1,19 @@
 package com.sobczak.artur;
 
 public class BubbleSort {
+    int temp;
 
-    protected void bubbleSortMethod(FillArray fillArray, int arraySize){
-
-        for (int i = 0; i < arraySize; i++){
-
-
+    protected int[] bubbleSortMethod(int[] fillArray, int arraySize) {
+        // this method does the sorting
+        for (int i = 0; i < arraySize; i++) {
+            for (int j = 0; j < arraySize - 1; j++) {
+                if (fillArray[j] > fillArray[j + 1]) {
+                    temp = fillArray[j];
+                    fillArray[j] = fillArray[j + 1];
+                    fillArray[j + 1] = temp;
+                }
+            }
         }
-
+        return fillArray;
     }
-
 }

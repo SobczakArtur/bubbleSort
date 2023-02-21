@@ -8,16 +8,16 @@ public class Main {
         // the program sort content array use bubble sort
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("What size is your array? ");
+        System.out.println("What size is your array? \nMust be even.");
         int arraySize = scanner.nextInt();
 
         FillArray fillArray = new FillArray();
-        int[] sortedArray = fillArray.fillArrayMethod(arraySize);
-        System.out.println(Arrays.toString(sortedArray));
+        int[] unsortedArray = fillArray.fillArrayMethod(arraySize);
+      //  System.out.println(Arrays.toString(unsortedArray));
 
-
-//        BubbleSort bubbleSort = new BubbleSort();
-//        bubbleSort.bubbleSortMethod();
+        BubbleSort bubbleSort = new BubbleSort();
+        int[] sortArray = bubbleSort.bubbleSortMethod(unsortedArray, arraySize);
+        System.out.println(Arrays.toString(sortArray));
 
     }
 }
